@@ -28,7 +28,9 @@ class _DebounceWidgetState extends State<DebounceWidget> {
     }
     setState(() => prevent = true);
     Future.delayed(Duration(milliseconds: widget.duration ?? DebounceWidget.defaultDuration), () {
-      setState(() => prevent = false);
+      if (mounted) {
+        setState(() => prevent = false);
+      }
     });
   }
 

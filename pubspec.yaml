@@ -1,6 +1,6 @@
 name: debounce_flutter
 description: Debounce widget.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/xushengjiang0/debounce_flutter
 
 environment:
